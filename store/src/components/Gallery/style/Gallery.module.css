@@ -1,0 +1,50 @@
+.galleryMainContainer {
+  margin: 8rem 4rem;
+  text-align: center;
+}
+
+.firstRow {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+}
+.firstRow .firstRowArticle {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.firstRow .firstRowArticle figure {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.firstRow .firstRowArticle figure img {
+  box-sizing: border-box;
+  height: auto;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.secondRow {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+}
+.secondRow .secondRowArticle {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.secondRow .secondRowArticle figure {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.secondRow .secondRowArticle figure img {
+  box-sizing: border-box;
+  height: auto;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1;
+}/*# sourceMappingURL=Gallery.module.css.map */
