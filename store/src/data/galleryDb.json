@@ -1,0 +1,167 @@
+[
+    {
+        "discounts": [
+            {
+                "_id": 1,
+                "title": "Harry Potter Book One",
+                "regularPrice": 10.00,
+                "discount": 50,
+                "inStock": 20,
+                "pages": 352,
+                "publisher": "Bloomsbury",
+                "language": "English",
+                "author": "J.K.Rowling",
+                "summary": "Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the live of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Wesley, all of whom are students at Hogwarts School of Witchcraft and Wizardy. The main story arc concerns Harry's conflict with Lord Voldemort, a dark wizard who intends to become immortal, overthrow the wizard governing body know as the Ministry on Magic, and subjugate all wizards and Muggles (non-magical people).",
+                "imgUrl": "https://m.media-amazon.com/images/I/81q77Q39nEL._AC_UF894,1000_QL80_.jpg"
+            },
+            {
+                "_id": 2,
+                "title": "Demon Slayer Volume 10",
+                "regularPrice": 10.00,
+                "discount": 50,
+                "inStock": 5,
+                "pages": 200,
+                "publisher": "VIZ Media",
+                "language": "English",
+                "author": "Koyoharu Gotouge",
+                "summary": "A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cire his sister.", 
+                "imgUrl": "https://m.media-amazon.com/images/I/812KqwwGENL._AC_UF1000,1000_QL80_.jpg"
+            },
+            {
+                "_id": 3,
+                "title": "The Adventures Of Sherlock Holmes",
+                "regularPrice": 10.00,
+                "discount": 50,
+                "inStock": 10,
+                "pages": 240,
+                "publisher": "Dover Publications",
+                "language": "English",
+                "author": "Arthur Conan Doyle",
+                "summary": "The Adventures of Sherlock Holmes is a collection of twelve short stories featuring the famous detective Sherlock Holmes and his loyal friend Dr. Watson. Set in late 19th-century London, the book follows Holmes as he solves a series of complex and intriguing cases using his keen powers of observation and deduction.",
+                "imgUrl": "https://m.media-amazon.com/images/I/91X7AWlxegL._AC_UF1000,1000_QL80_.jpg"
+                
+            },
+            {
+                "_id": 4,
+                "title": "The Basic Cook Book Guide",
+                "regularPrice": 10.00,
+                "discount": 50,
+                "inStoke": 100,
+                "pages": 384,
+                "publisher": "Nwe Holland Publishers",
+                "language": "English",
+                "author": "Lesley Pagett",
+                "summary": "You'll learn everything you need to know to get started in the kitchen - from boiling rice and scrambling eggs too making stock and backing the perfect roast with gravy - as well as how to prepare the dishes your mother abd grandmother used to make.",
+                "imgUrl": "https://nz.newhollandpublishers.com/pub/media/catalog/product/cache/32c3db8536f26a5ade98b0e2d5530502/t/h/the_basic_cookbook_guide_front_covers_final_lr.jpg"
+            }
+        ]
+    },
+   {
+    "manga": [
+        {
+            "_id": 1,
+            "title": "Demon Slayer Volume 1",
+            "regularPrice": 10.00,
+            "discount": 50,
+            "inStock": 6,
+            "pages": 192,
+            "publisher": "VIZ Media",
+            "language": "English",
+            "author": "Koyoharu Gotouge",
+            "summary": "A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cire his sister.", 
+            "imgUrl": "https://www.ciela.com/media/catalog/product/d/e/demon_slayer_kimetsu_no_yaiba_-_vol._1_-_koyoharu_gotouge_-_9781974700523_-_viz_media.jpg"
+        },
+        {
+            "_id": 3,
+            "title": "Demon Slayer Volume 3",
+            "regularPrice": 10.00,
+            "discount": 50,
+            "inStock": 4,
+            "pages": 192,
+            "publisher": "VIZ Media",
+            "language": "English",
+            "author": "Koyoharu Gotouge",
+            "summary": "A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cire his sister.", 
+            "imgUrl": "https://m.media-amazon.com/images/I/81WODxIA4aL._AC_UF1000,1000_QL80_.jpg"
+        },
+        {
+            "_id": 5,
+            "title": "Demon Slayer Volume 5",
+            "regularPrice": 10.00,
+            "discount": 50,
+            "inStock": 12,
+            "pages": 192,
+            "publisher": "VIZ Media",
+            "language": "English",
+            "author": "Koyoharu Gotouge",
+            "summary": "A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cire his sister.", 
+            "imgUrl": "https://m.media-amazon.com/images/I/81s302EkgiL._AC_UF1000,1000_QL80_.jpg"
+        },
+        {
+            "_id": 8,
+            "title": "Demon Slayer Volume 8",
+            "regularPrice": 10.00,
+            "discount": 50,
+            "inStock": 3,
+            "pages": 192,
+            "publisher": "VIZ Media",
+            "language": "English",
+            "author": "Koyoharu Gotouge",
+            "summary": "A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cire his sister.", 
+            "imgUrl": "https://cdn.ozone.bg/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/d/e/0a2f1f31d26d1c88c3070ed2f845777f/demon-slayer--kimetsu-no-yaiba--vol-8-30.jpg"
+        },
+        {
+            "_id": 10,
+            "title": "Demon Slayer Volume 10",
+            "regularPrice": 10.00,
+            "discount": 50,
+            "inStock": 5,
+            "pages": 200,
+            "publisher": "VIZ Media",
+            "language": "English",
+            "author": "Koyoharu Gotouge",
+            "summary": "A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cire his sister.", 
+            "imgUrl": "https://m.media-amazon.com/images/I/812KqwwGENL._AC_UF1000,1000_QL80_.jpg"
+        },
+        {
+            "_id": 11,
+            "title": "Mashima Hero's",
+            "regularPrice": 10.99,
+            "discount": 0,
+            "inStock": 5,
+            "pages": 208,
+            "publisher": "Kodansha Comics",
+            "language": "English",
+            "author": "Hero Mashima",
+            "summary": "The Fairy Tail guild are enjoying a well-deserved rest on True Island, an island known to contain the truth behind all the secrets of the world, when Natsu gets drawn into the jungle by the smell of delicious fruit. There he encounter Shiki, a young boy who's after the same fruit. Will our heros become friends or rivals? And how many other classic characters will make an appearance? Find out as all your old faves from three manga classics come together for the first time in a brand-new adventure!", 
+            "imgUrl": "https://m.media-amazon.com/images/I/81NDnmIH4FL._AC_UF1000,1000_QL80_.jpg"
+        },
+        {
+            "_id": 12,
+            "title": "Fairy Tail 100 Years Quest 12",
+            "regularPrice": 10.99,
+            "discount": 0,
+            "inStock": 15,
+            "pages": 192,
+            "publisher": "Kodansha Comics",
+            "language": "English",
+            "author": "Hero Mashima",
+            "summary": "Natsu Dragneel's team embarks on the 100 Years Quest issued by the Magia Dragon guild on the northern continent of Guiltina. The guild's master, a formerly human Dragon Slayer named Elefseria, instructs the team to subdue the Five Dragon Gods, who are each rumored to rival Acnologia in power.", 
+            "imgUrl": "https://m.media-amazon.com/images/I/51AK+2kO9BL.jpg"
+        },
+        {
+            "_id": 100,
+            "title": "One Piece Volume 100",
+            "regularPrice": 10.99,
+            "discount": 0,
+            "inStock": 10,
+            "pages": 216,
+            "publisher": "VIZ Media",
+            "language": "English",
+            "author": "Eiichiro Oda",
+            "summary": "Luffy is a young adventurer who has longed for a life of freedom ever since he can remember. He sets off from his small village on a perilous journey to find the legendary fabled treasure, ONE PIECE, to become King of the Pirates!", 
+            "imgUrl": "https://m.media-amazon.com/images/I/81rEhhwbubL._AC_UF1000,1000_QL80_.jpg"
+        }
+    ]
+   }
+]
