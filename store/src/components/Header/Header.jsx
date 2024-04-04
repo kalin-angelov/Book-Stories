@@ -7,7 +7,7 @@ const Header = () => {
     const [items, setItems] = useState(0);
 
     const cartClick = () => {
-        setItems(items => items += 1)
+      setItems(items => items += 1)
     };
 
   return (

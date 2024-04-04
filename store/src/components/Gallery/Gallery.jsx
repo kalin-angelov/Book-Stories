@@ -58,7 +58,7 @@ const Gallery = () => {
             </article>
         </div>
     </section>
-  )
-}
+  );
+};
 
-export default Gallery
+export default Gallery;
