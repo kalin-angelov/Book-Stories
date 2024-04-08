@@ -21,6 +21,15 @@ a:hover {
   color: inherit;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;

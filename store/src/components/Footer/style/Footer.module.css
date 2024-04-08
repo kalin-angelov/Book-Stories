@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 1rem;
-  border-top: solid 2px black;
+  border-top: solid 1px black;
 }
 
 .socialMediaLinks {
@@ -12,18 +12,16 @@
   gap: 0.5rem;
 }
 .socialMediaLinks h4 {
-  font-size: 2.2rem;
+  font-size: 1rem;
 }
 .socialMediaLinks i {
   color: black;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
-.siteInformation {
-  display: flex;
-  gap: 3rem;
-  margin-left: 5rem;
-}
 .siteInformation p {
-  font-size: 2rem;
+  font-size: 1rem;
+}
+.siteInformation ul li {
+  font-size: 0.7rem;
 }/*# sourceMappingURL=Footer.module.css.map */
