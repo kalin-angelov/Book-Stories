@@ -7,7 +7,7 @@ const GoUpBtn = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            (window.scrollY > 500) ?
+            (window.scrollY > 20) ?
                 setShowBtn(true)
             :
                 setShowBtn(false);
