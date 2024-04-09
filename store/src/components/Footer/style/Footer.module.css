@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 1rem;
+  padding: 0 20px;
   border-top: solid 1px black;
 }
 
@@ -13,15 +13,54 @@
 }
 .socialMediaLinks h4 {
   font-size: 1rem;
+  margin: 1rem 0;
 }
 .socialMediaLinks i {
   color: black;
   font-size: 1.3rem;
 }
 
-.siteInformation p {
-  font-size: 1rem;
+.siteInformation {
+  display: flex;
+  gap: 2rem;
 }
-.siteInformation ul li {
-  font-size: 0.7rem;
+.siteInformation p {
+  margin-top: 0;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .footerMainContainer {
+    padding: 0 50px;
+  }
+  .socialMediaLinks h4 {
+    font-size: 1.5rem;
+  }
+  .socialMediaLinks i {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footerMainContainer {
+    padding: 0 50px;
+  }
+  .socialMediaLinks {
+    gap: 1rem;
+  }
+  .socialMediaLinks h4 {
+    font-size: 3rem;
+  }
+  .socialMediaLinks i {
+    font-size: 2.6rem;
+  }
+  .siteInformation {
+    gap: 5rem;
+  }
+  .siteInformation p {
+    font-size: 1.5rem;
+  }
+  .siteInformation li {
+    font-size: 1.3rem;
+  }
 }/*# sourceMappingURL=Footer.module.css.map */
