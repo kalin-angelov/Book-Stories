@@ -1,31 +1,8 @@
 import styles from './style/Footer.module.css';
 
-import { useEffect, useState } from 'react';
-
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
-  const [showDropDownContacts, setShowDropDownContacts] = useState(true);
-  const [showDropDownAbout, setShowDropDownAbout] = useState(true);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  useEffect(() => {
-    setWindowWidth(window.innerWidth);
-
-    if (windowWidth >= 768) {
-      setShowDropDownAbout(true);
-      setShowDropDownContacts(true);
-    }
-  },[]);
-  
-  const toggle = (e) => {
-    if (windowWidth >= 425) {
-      e.target.id === 'contacts' ? 
-      setShowDropDownContacts(!showDropDownContacts)
-    :
-      setShowDropDownAbout(!showDropDownAbout)
-    }
-  };
-
 
   return (
     <footer className={styles.footerMainContainer}>
@@ -46,27 +23,20 @@ const Footer = () => {
       </section>
       <section className={styles.siteInformation}>
             <article>
-              <p id='contacts' onClick={(e) => toggle(e)}>Contacts</p>
-              {
-                showDropDownContacts && 
-                <ul>
-                  <li>Location</li>
-                  <li>Phone: 001 122 3344</li>
-                  <li>Mail: BookStories@gmail.com</li>
-                </ul>
-              }
-              
+              <p id='about' onClick={(e) => toggle(e)}>About Us</p>
+              <ul>
+                <li>Work Time</li>
+                <li>About</li>
+                <li>Team</li>
+              </ul>
             </article>
             <article>
-              <p id='about' onClick={(e) => toggle(e)}>About Us</p>
-              {
-                showDropDownAbout && 
-                <ul>
-                  <li>Work Time</li>
-                  <li>About</li>
-                  <li>Team</li>
-                </ul>
-              }
+              <p id='contacts' onClick={(e) => toggle(e)}>Contacts</p>
+              <ul>
+                <li>Location</li>
+                <li>Phone: 001 122 3344</li>
+                <li>Mail: BookStories@gmail.com</li>
+              </ul>  
             </article>
       </section>
     </footer>
