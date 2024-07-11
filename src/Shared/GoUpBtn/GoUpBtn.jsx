@@ -1,12 +1,12 @@
-import styles from './GoUpBtn.module.css';
+import styles from "./styles/GoUpBtn.css";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const GoUpBtn = () => {
-    const [showBtn, setShowBtn] = useState<boolean>(false);
+    const [showBtn, setShowBtn] = useState(false);
 
     useEffect(() => {
-        const handleScroll = (): void => {
+        const handleScroll = () => {
             (window.scrollY > 500) ?
                 setShowBtn(true)
             :
@@ -15,13 +15,13 @@ const GoUpBtn = () => {
 
         window.addEventListener('scroll', handleScroll);
 
-        return (): void => {
+        return () => {
             window.removeEventListener('scroll', handleScroll);
         };
 
     },[])
 
-    const moveToTop = (): void => {
+    const moveToTop = () => {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
@@ -37,6 +37,6 @@ const GoUpBtn = () => {
             <i className='fa-solid fa-circle-chevron-up'></i>
         </button>
     )
-}
+};
 
-export default GoUpBtn
+export default GoUpBtn;

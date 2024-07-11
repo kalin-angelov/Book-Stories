@@ -3,4 +3,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}/*# sourceMappingURL=All.css.map */
+}
+
+button {
+  cursor: pointer;
+  border: unset;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}/*# sourceMappingURL=App.css.map */
