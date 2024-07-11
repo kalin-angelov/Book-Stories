@@ -1,9 +1,14 @@
+import styles from "./styles/Navigation.module.css";
+
 import { useEffect, useRef, useState, useContext } from "react";
+
+import { Context } from "../../context/Context";
 
 const Navigation = () => {
     const menuRef = useRef();
     const [menuOpen, setMenuOpen] = useState(false);
-    const { windowSize } = useContext(Context);
+
+    const { windowSize, setCartOpen } = useContext(Context);
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -29,23 +34,23 @@ const Navigation = () => {
 
     return (
         <>
-            <button className="burger-btn" onClick={onMenuClick}>
+            <button className={styles.burgerBtn} onClick={onMenuClick}>
                 <img src="/images/icon-menu.svg" alt="menu icon" />
             </button>
 
-            <aside className={menuOpen ? "burger-menu" : "burger-menu-close"} >
-                <nav className="navigation-burger" ref={menuRef}>
+            <aside className={menuOpen ? styles.burgerMenu : styles.burgerMenuClose} >
+                <nav className={styles.navigationBurger} ref={menuRef}>
 
                     <button onClick={() => setMenuOpen(!menuOpen)}>
                         <img src="/images/icon-close.svg" alt="X btn" />
                     </button>
 
                     <ul>
-                        <li>Collections</li>
-                        <li>Men</li>
-                        <li>Women</li>
-                        <li>About</li>
-                        <li>Contact</li>
+                        <li>One</li>
+                        <li>Two</li>
+                        <li>Three</li>
+                        <li>Four</li>
+                        <li>Five</li>
                     </ul>
                 </nav>
             </aside>

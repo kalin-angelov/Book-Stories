@@ -1,9 +1,11 @@
 import styles from "./styles/Cart.module.css";
 
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
+
+import { Context } from "../../context/Context";
 
 const Cart = ( ) => {
-    const [cartOpen, setCartOpen] = useState(false);
+    const { cartOpen, setCartOpen } = useContext(Context);
     const [productsInCart, setProductsInCart] = useState(2);
     const cartRef = useRef();
 

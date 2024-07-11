@@ -1,0 +1,92 @@
+@mixin menuStyle {
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    .navigationBurger {
+        padding: 25px;
+        background-color: white;
+        height: 100dvh;
+        width: 250px;
+    
+        img {
+            padding-bottom: 40px;
+        }
+
+        li {
+            padding: 15px 0;
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+}
+
+
+
+.burgerMenu {
+    @include menuStyle();
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    transition: 0.4s;
+
+    .navigation {
+        width: 250px;
+    }
+}
+    
+.burgerMenuClose {
+    @include menuStyle();
+    width: 0;
+    left: -500px;
+    z-index: 0;
+    transition: 0.3s;
+
+    .navigation {
+        width: 0;
+    }
+}
+
+
+@media screen and (min-width: 570px) {
+    .navigationSection {
+        .burgerMenu {
+            .navigationBurger {
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .navigationSection {
+        align-items: center;
+        justify-content: center;
+        gap: 56px;
+
+        .logoTitle {
+            order: 1;
+            font-size: 34px;
+        }
+
+        .navigation {
+            order: 2;
+            ul {
+                display: flex;
+                gap: 32px;
+                
+                li {
+                    cursor: pointer;
+                    color: #828489;
+                    padding: 46px 0;
+                    border-bottom: 4px solid transparent;
+
+                    &:hover {
+                        color: black;
+                        border-color: orange;
+                    }
+                }
+            }
+        }
+    }
+}

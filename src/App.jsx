@@ -9,7 +9,8 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 function App() {
-  const [windowSize, setWindowSize] = useState(window.innerWidth);
+    const [windowSize, setWindowSize] = useState(window.innerWidth);
+    const [cartOpen, setCartOpen] = useState(false);
 
     useEffect(() => {
         const handleSize = () => {
@@ -26,7 +27,9 @@ function App() {
 
 
     const initialValue = {
-        windowSize
+        windowSize,
+        cartOpen, 
+        setCartOpen
     };
 
     return (

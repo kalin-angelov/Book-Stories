@@ -8,7 +8,7 @@
 button {
   cursor: pointer;
   border: unset;
-  background-color: white;
+  background-color: transparent;
 }
 
 a {
