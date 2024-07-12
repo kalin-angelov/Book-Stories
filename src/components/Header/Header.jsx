@@ -5,6 +5,7 @@ import { useState } from "react";
 
 import Navigation from "../Navigation/Navigation";
 import Cart from "../Cart/Cart";
+import ProfileMenu from "../ProfileMenu/ProfileMenu";
 
 const Header = () => {
 
@@ -20,8 +21,10 @@ const Header = () => {
             
             <div className={styles.headerSectionTwo}>
 
-                <Cart />
+                <ProfileMenu />
 
+                <Cart />
+                
             </div>
         </header>
         )
