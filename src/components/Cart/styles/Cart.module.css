@@ -3,9 +3,9 @@
 }
 .cartBtn .numOfProducts {
   padding: 0 5px;
-  border: 2px solid orange;
+  border: 2px solid green;
   border-radius: 15px;
-  background-color: orange;
+  background-color: green;
   color: white;
   font-size: 10px;
   position: absolute;
