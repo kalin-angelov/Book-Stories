@@ -1,0 +1,88 @@
+@mixin menuStyle {
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    .navigationBurger {
+        position: relative;
+        padding: 25px;
+        background-color: white;
+        height: 100dvh;
+        transition: 0.8s;
+        width: 250px;
+        img {
+            padding-bottom: 40px;
+        }
+
+        li {
+            padding: 15px 0;
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+}
+
+
+.burgerMenu {
+  @include menuStyle();
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+    
+.burgerMenuClose {
+    @include menuStyle();
+    top: -500px;
+    width: 0;
+    transition: 0.5s;
+    background-color: transparent;
+
+    .navigationBurger {
+        left: -500px;
+        width: 0;
+    }
+}
+
+
+@media screen and (min-width: 570px) {
+    .navigationSection {
+        .burgerMenu {
+            .navigationBurger {
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .navigationSection {
+        align-items: center;
+        justify-content: center;
+        gap: 56px;
+
+        .logoTitle {
+            order: 1;
+            font-size: 34px;
+        }
+
+        .navigation {
+            order: 2;
+            ul {
+                display: flex;
+                gap: 32px;
+                
+                li {
+                    cursor: pointer;
+                    color: #828489;
+                    padding: 46px 0;
+                    border-bottom: 4px solid transparent;
+
+                    &:hover {
+                        color: black;
+                        border-color: orange;
+                    }
+                }
+            }
+        }
+    }
+}
