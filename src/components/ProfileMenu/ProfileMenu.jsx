@@ -1,4 +1,4 @@
-import styles from "./styles/ProfileMenu.module.css";
+import styles from "./ProfileMenu.module.css";
 
 import { Link } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";

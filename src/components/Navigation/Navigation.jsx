@@ -1,4 +1,4 @@
-import styles from "./styles/Navigation.module.css";
+import styles from "./Navigation.module.css";
 
 import { useEffect, useRef, useState, useContext } from "react";
 
@@ -39,6 +39,7 @@ const Navigation = () => {
             </button>
 
             <aside className={menuOpen ? styles.burgerMenu : styles.burgerMenuClose} >
+                
                 <nav className={styles.navigationBurger} ref={menuRef}>
 
                     <button onClick={() => setMenuOpen(!menuOpen)}>
@@ -53,6 +54,7 @@ const Navigation = () => {
                         <li>Five</li>
                     </ul>
                 </nav>
+                
             </aside>
         </>
     )

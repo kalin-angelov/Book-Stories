@@ -1,4 +1,4 @@
-import styles from "./styles/Footer.module.css";
+import styles from "./Footer.module.css";
 
 import { Link } from "react-router-dom";
 
@@ -26,16 +26,15 @@ const Footer = () => {
                 <ul>
                     <li>Location</li>
                     <li>Phone: 001 122 3344</li>
-                    <li>Mail: BookStories@gmail.com</li>
+                    <li>Mail: bookstories@libery.com</li>
                 </ul>
             </article>
             <article>
                 <p>About Us</p>
 
                 <ul>
-                    <li>Work Time</li>
-                    <li>About</li>
-                    <li>Team</li>
+                  <li>Work Time</li>
+                  <li>About</li>
                 </ul>
             </article>
       </section>

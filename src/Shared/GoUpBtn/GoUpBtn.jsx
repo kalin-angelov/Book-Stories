@@ -1,4 +1,4 @@
-import styles from "./styles/GoUpBtn.css";
+import styles from "./GoUpBtn.module.css";
 
 import { useEffect, useState } from "react";
 

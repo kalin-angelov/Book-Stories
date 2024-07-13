@@ -7,6 +7,7 @@ import { Context } from "./context/Context";
 
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import Main from "./components/Main/Main";
 
 function App() {
     const [windowSize, setWindowSize] = useState(window.innerWidth);
@@ -37,7 +38,7 @@ function App() {
             <>
                 <Header />
                 <Routes>
-                
+                    <Route path="/" element={<Main />} />
                 </Routes>
                 <Footer />
             </>
