@@ -8,6 +8,7 @@ import { Context } from "./context/Context";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Main from "./components/Main/Main";
+import SingPage from "./components/SingPage/SingPage";
 
 function App() {
     const [windowSize, setWindowSize] = useState(window.innerWidth);
@@ -39,6 +40,7 @@ function App() {
                 <Header />
                 <Routes>
                     <Route path="/" element={<Main />} />
+                    <Route path="/sing" element={<SingPage />} />
                 </Routes>
                 <Footer />
             </>
