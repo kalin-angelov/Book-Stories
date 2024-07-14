@@ -17,7 +17,6 @@
   width: 135px;
   height: auto;
   box-shadow: 0px 2px 4px 0;
-  border-radius: 5px;
   background-color: white;
 }
 .profileMenuContainer .userMenu li {
@@ -28,5 +27,8 @@
   color: black;
 }
 .profileMenuContainer .userMenu li:hover {
-  background-color: green;
+  background-color: rgb(86, 195, 34);
+}
+.profileMenuContainer .userMenu li:hover a {
+  color: white;
 }/*# sourceMappingURL=ProfileMenu.module.css.map */

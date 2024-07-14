@@ -7,8 +7,8 @@ import { Context } from "./context/Context";
 
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Main from "./components/Main/Main";
-import SingPage from "./components/SingPage/SingPage";
+import Home from "./components/Hone/Home";
+import EntryPage from "./components/EntryPage/EntryPage";
 
 function App() {
     const [windowSize, setWindowSize] = useState(window.innerWidth);
@@ -38,10 +38,12 @@ function App() {
         <Context.Provider value={initialValue}>
             <>
                 <Header />
-                <Routes>
-                    <Route path="/" element={<Main />} />
-                    <Route path="/sing" element={<SingPage />} />
-                </Routes>
+                <main>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/entry" element={<EntryPage />} />
+                    </Routes>
+                </main>
                 <Footer />
             </>
         </Context.Provider>

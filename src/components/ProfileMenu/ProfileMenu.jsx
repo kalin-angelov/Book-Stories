@@ -32,8 +32,8 @@ const ProfileMenu = () => {
             </figure>
 
             <ul className={styles.userMenu} style={{display: showMenu ? "block" : "none"}}>
-                <li><Link>Sign up</Link></li>
-                <li><Link>Sign in</Link></li>
+                <li><Link to={"/entry"} state={"sing_up"}>Sign Up</Link></li>
+                <li><Link to={"/entry"} state={"sing_in"}>Sign In</Link></li>
             </ul>
 
         </div>

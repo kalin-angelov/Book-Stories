@@ -19,7 +19,6 @@
         width: 135px;
         height: auto;
         box-shadow: 0px 2px 4px 0;
-        border-radius: 5px;
         background-color: white;
 
         li {
@@ -30,7 +29,11 @@
             }
 
             &:hover {
-                background-color: green;
+                background-color:  rgb(86,195,34);
+                a {
+                    color: white;
+                }
+                
             }
         }
     }
