@@ -1,0 +1,32 @@
+.footerMainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  background-color: #313a49;
+}
+.footerMainContainer .socialMediaLinks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footerMainContainer .socialMediaLinks h3 {
+  font-size: 25px;
+  margin-right: 15px;
+}
+.footerMainContainer .socialMediaLinks i {
+  color: white;
+  font-size: 20px;
+}
+.footerMainContainer .siteInformation {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+}
+.footerMainContainer .siteInformation h4 {
+  font-size: 18px;
+}
+.footerMainContainer .siteInformation span {
+  color: white;
+}/*# sourceMappingURL=Footer.module.css.map */
