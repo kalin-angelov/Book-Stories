@@ -1,0 +1,36 @@
+.profileMenuContainer {
+    position: relative;
+    
+    .profileIcon {
+        i {
+            font-size: 25px;
+            cursor: pointer;
+        }
+    }
+
+    .userMenu {
+        position: absolute;
+        top: 30px;
+
+        width: 100px;
+        height: auto;
+        box-shadow: 0px 2px 4px 0;
+        background-color: #202632;
+
+        li {
+            padding: 10px;
+            a {
+                cursor: pointer;
+                color: white;
+            }
+
+            &:hover {
+                background-color: #52feaa;
+                a {
+                    color: black;
+                }
+                
+            }
+        }
+    }
+}

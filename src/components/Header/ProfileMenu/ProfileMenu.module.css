@@ -1,0 +1,28 @@
+.profileMenuContainer {
+  position: relative;
+}
+.profileMenuContainer .profileIcon i {
+  font-size: 25px;
+  cursor: pointer;
+}
+.profileMenuContainer .userMenu {
+  position: absolute;
+  top: 30px;
+  width: 100px;
+  height: auto;
+  box-shadow: 0px 2px 4px 0;
+  background-color: #202632;
+}
+.profileMenuContainer .userMenu li {
+  padding: 10px;
+}
+.profileMenuContainer .userMenu li a {
+  cursor: pointer;
+  color: white;
+}
+.profileMenuContainer .userMenu li:hover {
+  background-color: #52feaa;
+}
+.profileMenuContainer .userMenu li:hover a {
+  color: black;
+}/*# sourceMappingURL=ProfileMenu.module.css.map */
