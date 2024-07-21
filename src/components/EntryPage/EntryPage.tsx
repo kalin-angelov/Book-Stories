@@ -1,66 +1,58 @@
 import styles from "./EntryPage.module.css";
 
-import { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { CSSProperties, useState } from "react";
+import { useLocation, Link } from "react-router-dom";
 
 const EntryPage = () => {
     const location = useLocation();
     const form = location.state;
-    const [formState, setFormState] = useState(form === "sing_in" ? true : false);
+    const [formState, setFormState] = useState<boolean>(form === "sing_in" ? true : false);
+    
+    const changeForm = (e:any) => {
+        const formType = e.target.id;
+        formType === "login" ? setFormState(true) : setFormState(false);
+    };
 
     return (
-        <main className={styles.entryMainContainer}>
+        <main className={styles.main}>
 
-            {
-                formState ? 
+            <form className={styles.entryForm}>
 
-                <form className={styles.loginForm}>
+                <ul className={styles.formTitles}>
+                    <li id="login" style={formState === true ? {borderBottom: "2px solid #52feaa"} : {borderBottom: "unset"}} onClick={(e) => changeForm(e)}>Login</li>
+                    <li id="register"style={formState === false ? {borderBottom: "2px solid #52feaa"} : {borderBottom: "unset"}} onClick={(e) => changeForm(e)}>Register</li>
+                </ul>
 
-                    <label htmlFor="email">Email: 
-                        <input type="text" name="email" id="email"/>
-                    </label>
+                {
+                    formState ? 
+
+                    <fieldset className={styles.loginForm}>
+
+                        <input type="text" name="email" id="email" placeholder="Email"/>
+
+                        <input type="text" name="password" id="password" placeholder="Password"/>
+
+                    </fieldset>
+                :
+                    <fieldset className={styles.registerForm}>
+   
+                        <input type="text" name="firstName" id="firstName" placeholder="Name"/>
+        
+                        <input type="text" name="lastName" id="lastName" placeholder="Last name"/>
+   
+                        <input type="text" name="email" id="email" placeholder="Email"/>
+
+                        <input type="text" name="password" id="password" placeholder="Password"/>
+   
+                        <input type="text" name="rePassword" id="rePassword" placeholder="Confirm password"/>
+    
+                    </fieldset>
                     
+                }
 
-                    <label htmlFor="password">Password:
-                        <input type="text" name="password" id="password" />
-                    </label>
-                    
-                </form>
-            :
-                <form className={styles.registerForm}>
+                <button className={styles.submitBtn} type="submit">Submit</button>
 
-                    <label htmlFor="firstName">First Name:
-                        <input type="text" name="firstName" id="firstName"/>
-                    </label>
-
-                    <label htmlFor="lastName">Last Name:
-                        <input type="text" name="lastName" id="lastName"/>
-                    </label>
-
-                    <label htmlFor="email">Email:
-                        <input type="text" name="email" id="email"/>
-                    </label>
-
-                    <label htmlFor="password">Password:
-                        <input type="text" name="password" id="password" />
-                    </label>
-
-                    <label htmlFor="rePassword">Repeat Password:
-                        <input type="text" name="rePassword" id="rePassword" />
-                    </label>
-                
-                </form>
-                
-            }
-
-            <button 
-                className={styles.toggleBtn} 
-                type="button" 
-                onClick={() => { setFormState(!formState) }}
-            >
-                {formState ? "Sing Up" : "Sing In" }
-            </button>
-
+            </form>
         </main>
     );
 };

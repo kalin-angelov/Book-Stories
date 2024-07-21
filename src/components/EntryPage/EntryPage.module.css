@@ -1,67 +1,58 @@
-.entryMainContainer {
+main .entryForm {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 50px;
-}
-.entryMainContainer .loginForm {
-  animation-duration: 1000ms;
-  animation-timing-function: linear;
   width: 350px;
-  height: 350px;
+  height: 350;
   padding: 20px;
   box-shadow: 0px 0px 5px 0px #52feaa;
   border-radius: 15px;
+  background-color: #313a49;
+}
+main .entryForm .loginForm {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 15px;
-  animation-name: rotate-right;
+  border: unset;
 }
-.entryMainContainer .loginForm label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: rgb(86, 195, 34);
-}
-.entryMainContainer .loginForm label input {
+main .entryForm .loginForm input {
   border-radius: 5px;
   width: 100%;
   height: 25px;
   text-align: center;
+  background-color: #e8f0fe;
 }
-.entryMainContainer .registerForm {
-  animation-duration: 1000ms;
-  animation-timing-function: linear;
-  width: 350px;
-  height: 350px;
-  padding: 20px;
-  box-shadow: 0px 0px 5px 0px #52feaa;
-  border-radius: 15px;
+main .entryForm .registerForm {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 15px;
-  animation-name: rotate-left;
+  border: unset;
 }
-.entryMainContainer .registerForm label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: rgb(86, 195, 34);
-}
-.entryMainContainer .registerForm label input {
+main .entryForm .registerForm input {
   border-radius: 5px;
   width: 100%;
   height: 25px;
   text-align: center;
+  background-color: #e8f0fe;
 }
-.entryMainContainer .toggleBtn {
+main .entryForm .formTitles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-direction: row;
+  gap: 20px;
+}
+main .entryForm .formTitles li {
+  color: #d0e3ea;
+  margin: 10px;
+}
+main .entryForm .submitBtn {
   width: 150px;
   height: 50px;
   border: 2px solid black;
@@ -71,24 +62,7 @@
   color: black;
   background-color: #52feaa;
 }
-.entryMainContainer .toggleBtn:hover {
+main .entryForm .submitBtn:hover {
   background-color: rgb(86, 195, 34);
   color: black;
-}
-
-@keyframes rotate-left {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(-180deg);
-  }
-}
-@keyframes rotate-right {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(180deg);
-  }
 }/*# sourceMappingURL=EntryPage.module.css.map */

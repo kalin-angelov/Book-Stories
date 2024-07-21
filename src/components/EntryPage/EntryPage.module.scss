@@ -6,79 +6,65 @@
 }
 
 @mixin form {
-    animation-duration: 1000ms;
-    animation-timing-function: linear;
-    
-    width: 350px;
-    height: 350px;
-    padding: 20px;
-    box-shadow: 0px 0px 5px 0px #52feaa;
-    border-radius: 15px;
-
     @include flex();
     gap: 15px;
+    border: unset;
 
-    label {
+    input {
+        border-radius: 5px;
+        width: 100%;
+        height: 25px;
+        text-align: center;
+        background-color: #e8f0fe
+    }
+
+    
+}
+
+main{
+  
+    .entryForm {
         @include flex();
-        color: rgb(86,195,34);
+        width: 350px;
+        height: 350;
+        padding: 20px;
+        box-shadow: 0px 0px 5px 0px #52feaa;
+        border-radius: 15px;
+        background-color: #313a49;
 
-        input {
-            border-radius: 5px;
-            width: 100%;
-            height: 25px;
-            text-align: center
+        .loginForm {
+            @include form();
         }
-    }
-}
+    
+        .registerForm {
+            @include form();
+        }
 
-.entryMainContainer {
-    @include flex();
-    gap: 50px;
+        .formTitles {
+            @include flex();
+            flex-direction: row;
+            gap: 20px;
 
-    .loginForm {
-        @include form();
-        animation-name: rotate-right;
-    }
+            li {
+                color: #d0e3ea;
+                margin: 10px;
+            }
+        }  
 
-    .registerForm {
-        @include form();
-        animation-name: rotate-left;
-    }
-
-    .toggleBtn {
-        width: 150px;
-        height: 50px;
-        border: 2px solid black;
-        border-radius: 10px;
-        font-size: 16px;
-        font-weight: 500;
-        color: black;
-        background-color: #52feaa;
-
-        &:hover {
-            background-color: rgb(86,195,34);
+        .submitBtn {
+            width: 150px;
+            height: 50px;
+            border: 2px solid black;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 500;
             color: black;
+            background-color: #52feaa;
+    
+            &:hover {
+                background-color: rgb(86,195,34);
+                color: black;
+            }
         }
-    }
-   
-}   
-
-@keyframes rotate-left {
-    from {
-        transform: rotateY(0deg);
-    }
-
-    to {
-        transform: rotateY(-180deg);
-    }
-}
-
-@keyframes rotate-right {
-    from {
-        transform: rotateY(0deg);
-    }
-
-    to {
-        transform: rotateY(180deg);
     }
 }
