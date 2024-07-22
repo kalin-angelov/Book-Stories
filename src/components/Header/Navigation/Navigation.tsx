@@ -5,13 +5,13 @@ import { useEffect, useRef, useState, useContext } from "react";
 import { Context } from "../../../context/Context";
 
 const Navigation = () => {
-    const menuRef = useRef();
+    const menuRef = useRef<HTMLDivElement>(null);
     const [menuOpen, setMenuOpen] = useState(false);
 
     const { windowSize, setCartOpen } = useContext(Context);
 
     useEffect(() => {
-        const handleClickOutside = (event) => {
+        const handleClickOutside = (event:any) => {
             if (menuRef.current && !menuRef.current.contains(event.target)) {
                 setMenuOpen(false);
             };
