@@ -5,7 +5,7 @@ import { useEffect, useRef, useState, useContext } from "react";
 import { Context } from "../../../context/Context";
 
 const Navigation = () => {
-    const menuRef = useRef<HTMLDivElement>(null);
+    const menuRef = useRef<HTMLElement>(null);
     const [menuOpen, setMenuOpen] = useState(false);
 
     const { windowSize, setCartOpen } = useContext(Context);
