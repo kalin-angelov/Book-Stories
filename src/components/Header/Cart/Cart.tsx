@@ -1,16 +1,16 @@
 import styles from "./Cart.module.css";
 
-import { useContext, useEffect, useRef, useState } from "react";
+import { HTMLAttributes, useContext, useEffect, useRef, useState } from "react";
 
 import { Context } from "../../../context/Context";
 
 const Cart = ( ) => {
     const { cartOpen, setCartOpen } = useContext(Context);
     const [productsInCart, setProductsInCart] = useState<number>(2);
-    const cartRef = useRef();
+    const cartRef = useRef<HTMLElement>(null);
 
     useEffect(() => {
-        const handleClickOutsideCart = (event) => {
+        const handleClickOutsideCart = (event:any) => {
             if (cartRef.current && !cartRef.current.contains(event.target)) {
                 setCartOpen(false);
             };
