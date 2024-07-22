@@ -1,10 +1,11 @@
 import styles from "./EntryPage.module.css";
 
-import { CSSProperties, useState } from "react";
-import { useLocation, Link } from "react-router-dom";
+import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const EntryPage = () => {
     const location = useLocation();
+    const navigate = useNavigate();
     const form = location.state;
     const [formState, setFormState] = useState<boolean>(form === "sing_in" ? true : false);
     
@@ -13,14 +14,18 @@ const EntryPage = () => {
         formType === "login" ? setFormState(true) : setFormState(false);
     };
 
+    const onSubmit = () => {
+        navigate("/");
+    };
+
     return (
         <main className={styles.main}>
 
             <form className={styles.entryForm}>
 
                 <ul className={styles.formTitles}>
-                    <li id="login" style={formState === true ? {borderBottom: "2px solid #52feaa"} : {borderBottom: "unset"}} onClick={(e) => changeForm(e)}>Login</li>
-                    <li id="register"style={formState === false ? {borderBottom: "2px solid #52feaa"} : {borderBottom: "unset"}} onClick={(e) => changeForm(e)}>Register</li>
+                    <li id="login" style={formState === true ? {borderBottom: "1px solid #52feaa"} : {borderBottom: "unset"}} onClick={(e) => changeForm(e)}>Login</li>
+                    <li id="register"style={formState === false ? {borderBottom: "1px solid #52feaa"} : {borderBottom: "unset"}} onClick={(e) => changeForm(e)}>Register</li>
                 </ul>
 
                 {
@@ -50,7 +55,7 @@ const EntryPage = () => {
                     
                 }
 
-                <button className={styles.submitBtn} type="submit">Submit</button>
+                <button className={styles.submitBtn} onClick={onSubmit} type="submit">Submit</button>
 
             </form>
         </main>
