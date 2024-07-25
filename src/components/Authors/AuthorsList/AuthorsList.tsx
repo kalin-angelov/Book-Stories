@@ -15,30 +15,37 @@ const AuthorsList = () => {
             <h2>Authors</h2>
 
             <div className={styles.list}>
+
                 <figure onClick={navigateTo}>
-                    <img src="https://d28hgpri8am2if.cloudfront.net/author_images/2925_1102485.jpg" alt="Author img" />
-                    <figcaption>Christie Golden</figcaption>
+                    <img src="/public/images/comic-book-author-1.png" alt="Author img" />
+                    <figcaption>Ken Adams</figcaption>
                 </figure>
+
                 <figure onClick={navigateTo}>
-                    <img src="https://cdn.rickriordan.com/wp-content/uploads/2020/10/11224708/rick.jpg" alt="Author img" />
-                    <figcaption>Rick Riordan</figcaption>
+                    <img src="/public/images/cook-author-1.png" alt="Author img" />
+                    <figcaption>Sara West</figcaption>
                 </figure>
+
                 <figure onClick={navigateTo}>
-                    <img src="https://www.hachette.co.uk/wp-content/uploads/2019/01/contributor-j-k-rowling-614.jpg?w=340" alt="Author img" />
-                    <figcaption>J.K. Rowling</figcaption>
+                    <img src="/public/images/criminal-roman-author-1.png" alt="Author img" />
+                    <figcaption>K.K. Tomas</figcaption>
                 </figure>
+
                 <figure onClick={navigateTo}>
-                    <img src="https://miro.medium.com/v2/resize:fit:621/1*DLJ3UGHPWDtrzfcMTYjfZw.jpeg" alt="Author img" />
-                    <figcaption>Eiichiro Oda</figcaption>
+                    <img src="/public/images/criminal-author-2.png" alt="Author img" />
+                    <figcaption>Megan Mizumo</figcaption>
                 </figure>
+
                 <figure onClick={navigateTo}>
-                    <img src="https://deadline.com/wp-content/uploads/2023/07/george-rr-martin-hbo-house-of-the-dragon.jpg?w=681&h=383&crop=1" alt="Author img" />
-                    <figcaption>George R.R. Martin</figcaption>
+                    <img src="/public/images/manga-author-1.png" alt="Author img" />
+                    <figcaption>Sakai Oda</figcaption>
                 </figure>
+
                 <figure onClick={navigateTo}>
-                    <img src="https://m.media-amazon.com/images/M/MV5BZmJmMzY2YzAtM2UwZi00ZDcwLThkOTItNjBjOTYxYWVhNDM3XkEyXkFqcGdeQXVyMTc4MzI2NQ@@._V1_.jpg" alt="Author img" />
-                    <figcaption>Andrzej Sapkowski</figcaption>
+                    <img src="/public/images/fantasy-author-1.png" alt="Author img" />
+                    <figcaption>Christian Silver</figcaption>
                 </figure>
+                
             </div>
             
         </section>
