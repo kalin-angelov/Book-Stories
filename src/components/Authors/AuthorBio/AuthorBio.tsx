@@ -5,19 +5,17 @@ const AuthorBio = () => {
   return (
     <article className={styles.author}>
 
-        <h3 className={styles.author_name}>Christie Golden</h3>
+        <h3 className={styles.author_name}>Christian Silver</h3>
 
         <figure className={styles.author_portrait}>
-            <img src="https://d28hgpri8am2if.cloudfront.net/author_images/2925_1102485.jpg" alt="Author img" />
+            <img src="/public/images/fantasy-author-1.png" alt="Author img" />
         </figure>
 
         <h4>About the author:</h4>
 
         <p className={styles.author_bio}>
-            Golden has written many novels and several short stories in the fields of science fiction,
-            fantasy and horror. Among her many projects are over a dozen Star Trek novels, 
-            over a dozen for gaming giant Blizzard's World of Warcraft and StarCraft novels,
-            and three books for the now finished Fate of the Jedi series of Star Wars novels.
+            Christian Silver is a bestselling fantasy author known for weaving intricate worlds filled with magic, mystery, and unforgettable characters.
+            With a passion for storytelling that began in her childhood, Christian has crafted a series of novels that transport readers to realms where anything is possible and adventure awaits at every turn
         </p>
 
         <h5>Books:</h5>
@@ -26,40 +24,28 @@ const AuthorBio = () => {
 
             <div className={styles.book}>
                 <figure>
-                    <img src="https://m.media-amazon.com/images/I/81-4QV-KrLL._AC_UF894,1000_QL80_.jpg" alt="Book img" />
+                    <img src="/public/images/fantasy-book-1.png" alt="Book img" />
                 </figure>
             </div>
 
             <div className={styles.book}>
                 <figure>
-                    <img src="https://m.media-amazon.com/images/I/81J33rJqn6L._AC_UF894,1000_QL80_.jpg" alt="Book img" />
+                    <img src="/public/images/fantasy-book-2.png" alt="Book img" />
                 </figure>
             </div>
 
             <div className={styles.book}>
                 <figure>
-                    <img src="https://m.media-amazon.com/images/I/51eQUJZ92GL._AC_UF1000,1000_QL80_.jpg" alt="Book img" />
+                    <img src="/public/images/fantasy-book-3.png" alt="Book img" />
                 </figure>
             </div>
 
             <div className={styles.book}>
                 <figure>
-                    <img src="https://m.media-amazon.com/images/I/81x7UlKUj1L._AC_UF1000,1000_QL80_.jpg" alt="Book img" />
+                    <img src="/public/images/fantasy-book-4.png" alt="Book img" />
                 </figure>
             </div>
-
-            <div className={styles.book}>
-                <figure>
-                    <img src="https://m.media-amazon.com/images/I/81PABS6r+iL._AC_UF1000,1000_QL80_.jpg" alt="Book img" />
-                </figure>
-            </div>
-
-            <div className={styles.book}>
-                <figure>
-                    <img src="https://m.media-amazon.com/images/I/71KHfujRdvL._AC_UF1000,1000_QL80_.jpg" alt="Book img" />
-                </figure>
-            </div>
-           
+            
         </div>
 
     </article>
