@@ -1,55 +1,62 @@
 import styles from "./AuthorBio.module.css";
 
+import { useNavigate } from "react-router-dom";
 
 const AuthorBio = () => {
-  return (
-    <article className={styles.author}>
+    const navigate = useNavigate();
 
-        <h3 className={styles.author_name}>Christian Silver</h3>
+    const toProduct = () => {
+        navigate("/product");
+    };
 
-        <figure className={styles.author_portrait}>
-            <img src="/public/images/fantasy-author-1.png" alt="Author img" />
-        </figure>
+    return (
+        <article className={styles.author}>
 
-        <h4>About the author:</h4>
+            <h3 className={styles.author_name}>Christian Silver</h3>
 
-        <p className={styles.author_bio}>
-            Christian Silver is a bestselling fantasy author known for weaving intricate worlds filled with magic, mystery, and unforgettable characters.
-            With a passion for storytelling that began in her childhood, Christian has crafted a series of novels that transport readers to realms where anything is possible and adventure awaits at every turn
-        </p>
+            <figure className={styles.author_portrait}>
+                <img src="/public/images/fantasy-author-1.png" alt="Author img" />
+            </figure>
 
-        <h5>Books:</h5>
+            <h4>About the author:</h4>
 
-        <div className={styles.author_books}>
+            <p className={styles.author_bio}>
+                Christian Silver is a bestselling fantasy author known for weaving intricate worlds filled with magic, mystery, and unforgettable characters.
+                With a passion for storytelling that began in her childhood, Christian has crafted a series of novels that transport readers to realms where anything is possible and adventure awaits at every turn
+            </p>
 
-            <div className={styles.book}>
-                <figure>
-                    <img src="/public/images/fantasy-book-1.png" alt="Book img" />
-                </figure>
+            <h5>Books:</h5>
+
+            <div className={styles.author_books}>
+
+                <div className={styles.book} onClick={toProduct}>
+                    <figure>
+                        <img src="/public/images/fantasy-book-1.png" alt="Book img" />
+                    </figure>
+                </div>
+
+                <div className={styles.book} onClick={toProduct}>
+                    <figure>
+                        <img src="/public/images/fantasy-book-2.png" alt="Book img" />
+                    </figure>
+                </div>
+
+                <div className={styles.book} onClick={toProduct}>
+                    <figure>
+                        <img src="/public/images/fantasy-book-3.png" alt="Book img" />
+                    </figure>
+                </div>
+
+                <div className={styles.book} onClick={toProduct}>
+                    <figure>
+                        <img src="/public/images/fantasy-book-4.png" alt="Book img" />
+                    </figure>
+                </div>
+                
             </div>
 
-            <div className={styles.book}>
-                <figure>
-                    <img src="/public/images/fantasy-book-2.png" alt="Book img" />
-                </figure>
-            </div>
-
-            <div className={styles.book}>
-                <figure>
-                    <img src="/public/images/fantasy-book-3.png" alt="Book img" />
-                </figure>
-            </div>
-
-            <div className={styles.book}>
-                <figure>
-                    <img src="/public/images/fantasy-book-4.png" alt="Book img" />
-                </figure>
-            </div>
-            
-        </div>
-
-    </article>
-  );
+        </article>
+    );
 };
 
 export default AuthorBio;
