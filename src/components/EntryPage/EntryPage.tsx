@@ -21,9 +21,9 @@ const EntryPage = () => {
     return (
         <main className={styles.main}>
 
-            <form className={styles.entryForm}>
+            <form className={styles.entry_form}>
 
-                <ul className={styles.formTitles}>
+                <ul className={styles.form_titles}>
                     <li id="login" style={formState === true ? {borderBottom: "1px solid #52feaa"} : {borderBottom: "unset"}} onClick={(e) => changeForm(e)}>Login</li>
                     <li id="register"style={formState === false ? {borderBottom: "1px solid #52feaa"} : {borderBottom: "unset"}} onClick={(e) => changeForm(e)}>Register</li>
                 </ul>
@@ -31,7 +31,7 @@ const EntryPage = () => {
                 {
                     formState ? 
 
-                    <fieldset className={styles.loginForm}>
+                    <fieldset className={styles.login_form}>
 
                         <input type="text" name="email" id="email" placeholder="Email"/>
 
@@ -39,7 +39,7 @@ const EntryPage = () => {
 
                     </fieldset>
                 :
-                    <fieldset className={styles.registerForm}>
+                    <fieldset className={styles.register_form}>
    
                         <input type="text" name="firstName" id="firstName" placeholder="Name"/>
         
@@ -55,7 +55,7 @@ const EntryPage = () => {
                     
                 }
 
-                <button className={styles.submitBtn} onClick={onSubmit} type="submit">Submit</button>
+                <button className={styles.submit_btn} onClick={onSubmit} type="submit">Submit</button>
 
             </form>
         </main>
