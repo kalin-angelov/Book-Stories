@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer className={styles.footerMainContainer}>
+        <footer className={styles.footer_main_container}>
 
-            <section className={styles.socialMediaLinks}>
+            <section className={styles.social_media_links}>
 
                 <h3>Book Stories</h3>
 
@@ -28,7 +28,7 @@ const Footer = () => {
 
             </section>
 
-            <div className={styles.siteInformation}>
+            <div className={styles.site_information}>
 
                 <article>
                     <h4>Contacts</h4>
