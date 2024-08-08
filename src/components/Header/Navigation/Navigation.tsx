@@ -1,14 +1,13 @@
 import styles from "./Navigation.module.css";
 
-import { useEffect, useRef, useState, useContext } from "react";
+import { useEffect, useRef, useState } from "react";
 
-import { Context } from "../../../context/Context";
 
 const Navigation = () => {
     const menuRef = useRef<HTMLElement>(null);
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const { windowSize, setCartOpen } = useContext(Context);
+    const [cartOpen, setCartOpen] = useState<boolean>(false);
 
     useEffect(() => {
         const handleClickOutside = (event:any) => {
