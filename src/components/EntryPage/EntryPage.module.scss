@@ -22,11 +22,22 @@
             font-size: 16px
         }
     }
-
     
 }
 
 main{
+    
+    .form_titles {
+        @include flex();
+        flex-direction: row;
+        gap: 20px;
+
+        li {
+            color: #d0e3ea;
+            cursor: pointer;
+            margin: 10px;
+        }
+    }  
   
     .entry_form {
         @include flex();
@@ -41,18 +52,6 @@ main{
         .register_form {
             @include form();
         }
-
-        .form_titles {
-            @include flex();
-            flex-direction: row;
-            gap: 20px;
-
-            li {
-                color: #d0e3ea;
-                cursor: pointer;
-                margin: 10px;
-            }
-        }  
 
         .submit_btn {
             width: 100%;
@@ -69,6 +68,10 @@ main{
                 background-color: rgb(86,195,34);
                 color: black;
             }
+        }
+
+        .error {
+            color: red;
         }
     }
 }
