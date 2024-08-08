@@ -14,7 +14,7 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
     const [windowSize, setWindowSize] = useState<number>(window.innerWidth);
-    const [cartOpen, setCartOpen] = useState<boolean>(false);
+ 
 
     return (
         <>
