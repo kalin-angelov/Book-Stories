@@ -3,8 +3,6 @@ import "./App.css";
 import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 
-
-
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import EntryPage from "./components/EntryPage/EntryPage";
@@ -14,7 +12,6 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
     const [windowSize, setWindowSize] = useState<number>(window.innerWidth);
- 
 
     return (
         <>
