@@ -1,10 +1,11 @@
 import styles from "./Cart.module.css";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useContext } from "react";
+import { GlobalContext, GlobalContextType } from "../../../context/Context";
 
 
 const Cart = ( ) => {
-    const [cartOpen, setCartOpen] = useState<boolean>(false);
+    const { cartOpen, setCartOpen } = useContext<GlobalContextType>(GlobalContext);
     
     const [productsInCart, setProductsInCart] = useState<number>(2);
     const cartRef = useRef<HTMLElement>(null);
